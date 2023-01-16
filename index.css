@@ -1,279 +1,130 @@
-*{
-    margin:0px;
-    padding:0 px;
+body {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+}
+
+
+#navbar {
+    display: flex;
+    list-style: none;
+    background-color: teal;
+    /* justify-content:center; */
+    align-items: center;
+    height: 3.375rem;
+
+
+
+}
+
+#navbar a {
+    text-decoration-line: none;
+    color: white;
+
+}
+
+.navElement {
+
+    height: 32px;
+    width: 144px;
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+    left: 690px;
+    font-size: 19px;
+
+
+
+}
+
+.navElement:hover {
+    background-color: rgb(0, 0, 0);
+    border-radius: 2px;
+}
+
+
+
+#logo a {
+    height: 40px;
+    width: 48px;
+    align-items: center;
+    font-size: 21px;
+    padding: 24px;
     font-family: 'Permanent Marker', cursive;
 
 }
 
-body{
-    background-color: black;
+li button {
+    position: relative;
+    left: 746px;
+    font-size: 14px;
 }
 
-
-#navbar{
-    display:flex;
-    background:rgb(235, 122, 179);
-    height:4.5rem;
-    width:106.4rem;
-    /* border:2px solid red; */
-    
-}
-
-#navbar ul{
-    display:flex;
-    font-family: 'Permanent Marker', cursive;
-    
-
-    
-}
-
-#navbar ul li{
-    list-style:none;
-    margin-top:19px;
-    margin-left:42px;
-    /* border:2px solid red; */
-    border-radius:10px;
-    width:109px;
-    height:28px;
-    /* padding:10px;- */
+#section1 h1 {
+    margin: 0px;
     text-align: center;
-    font-size:1.0rem;
 }
 
-#navbar ul li a{
-    text-decoration:none;
-    color:white;
-    
-
-}
-
-.item:hover{
-    background:grey;
-    
-}
-
-
-#logo{
-    margin:10px 31px;
-}
-
-#logo img{
-    height: 48px;
-    width:55px;
-
-
-}
-
-#front{
+#section1 p {
     text-align: center;
-    height:388px;
-    width:1702px;
-    /* border:2px solid red; */
-    padding:68px;
+    font-size: 27px;
+
+
+}
+
+#subsection1 button {
+    cursor: pointer;
+}
+
+
+
+#section1 {
+    height: 400px;
     background-image: url("resume4.jpg");
-    font-size: 2rem;
-    color: rgb(250, 10, 10);
-    font-weight: bolder;
-    
-    
-    
-    /* margin:10px; */
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
 }
 
-#services1{
-    display:flex;
-    /* margin:77px; */
-    /* border:2px solid black; */
-    height:35rem;
-    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
-    background-repeat: no-repeat;
-    background-size: 107rem 35rem;
+#subsection1 {
+    display: inline-block;
+    margin: 110.4px 0px;
+    color: red;
 
-    /* background-color: hsl(291deg 60% 74%); */
-    /* background-image: url("resume3.png") */
-    
-    width:106.4rem;
-    /* transition:all;
-    transition-duration: 8s;
-    animation-name:anime;
-    animation-duration:8s;
-    animation-iteration-count: infinite; */
-    
-    /* transition-timing-function: ease-in; */
-    
-    
 }
 
+  #grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    
+    
 
 
-
-#photo{
-    color:white;
-    display:flex;
 }
 
-.photo1{
-    /* border:2px solid red; */
-    width:35.8rem;
-    height:300px;
-    text-align:center;
-    padding:107px;
-    transition:all;
-    transition-duration: 1s;
-    transition-timing-function: ease-in;
+.grid-element{
+    display: table;
+    height: 24vh;
+    }
+
+.sub-grid {
+    display: table-cell;
    
-    
-    
+    font-family: 'Secular One', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    /* background-color: #0B0C10;
+    color: #66FCF1; */
 }
 
-
-
-#photo12{
-    
-background-image:url("res4.png");
-
-    
+#grid-container>div:nth-child(odd)
+{
+    background-color: #EFE2BA;
+    color: #5AB9EA;
 }
 
-#photo12:hover{
-    background-image:url("https://st.depositphotos.com/2291517/4142/i/600/depositphotos_41427587-stock-photo-are-you-ready-concept.jpg");
-    border-top:6px solid skyblue;
-    border-bottom:6px solid lightgreen;
-    border-left:6px solid red;
-    border-right:6px solid yellow;
-    border-radius: 6px;
-    /* transform:rotate(360deg); */
-    
-    
-    
-}
-
-#photo14{
-
-    background-image:url("res.jpg");
-    background-repeat: no-repeat;
-    
-}
-
-#photo14:hover{
-    background-image:url("wolf.jpg");
-    /* transform:rotate(360deg); */
-    border:6px solid white;
-    border-radius:6px;
-
-
-}
-
-#photo13{
-    background-image:url("act.jpg");
-}
-#photo13:hover{
-    background-image: url("https://c4.wallpaperflare.com/wallpaper/242/213/294/iron-man-hero-superhero-minimalism-wallpaper-thumb.jpg");
-    /* transform:rotate(360deg); */
-    border-top:6px solid red;
-    border-left:6px solid blue;
-    border-bottom:6px solid red;
-    border-right:6px solid blue;
-    border-radius: 6px;
-}
-
-
-
-.services2{
-     width:19.3rem;
-     /* border:2px solid red; */
-     border-radius:10px;
-     padding:27px;
-     margin:auto;
-     text-align: center;
-     background-color:hsl(271deg 90% 79%);;
-     box-shadow: 4px 5px;
-    
-         
-}
-
-#services23:hover{
-    background-color:rgb(87, 87, 244);
-    color:white;
-    transition:all;
-    transition-duration: 1s;
-    transition-timing-function: ease-in;
-}
-
-#services24:hover{
-    background-color:rgb(164, 111, 248);
-    color:white;
-    transition:all;
-    transition-duration: 1s;
-    transition-timing-function: ease-in;
-}
-#services25:hover{
-    background-color:rgb(212, 20, 251);
-   
-    color:white;
-    transition:all;
-    transition-duration: 1s;
-    transition-timing-function: ease-in;
-}
-
-#iteml{
-    margin-right: -1241px;
-    animation-name:anime;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    font-weight: bolder;
-    font-size:1.3rem;
-    
-    
-}
-
-li button{
-    margin-right:-1147px;
-    border-radius: 4px;
-    cursor: pointer;
-    background-color: blueviolet;
-    color:white;
-    width:72px;
-    height:35px;
-    font-weight: bolder;
-    font-size:15px;
-}
-
-@keyframes anime{
-    0%{
-        color:rgb(241, 245, 118);
-    }
-
-    20%{
-        color:rgb(131, 203, 252);
-    }
-    40%{
-        color:rgb(243, 241, 241);
-    }
-    60%{
-        color:rgb(168, 244, 159);
-    }
-    80%{
-        color:rgb(166, 245, 249);
-    }
-    100%{
-        color:rgb(246, 240, 248);
-    }
-}
-
-#front button{
-    color:white;
-    background-color: black;
-    border-radius:6px;
-    cursor: pointer;
-    width:99px;
-    height:43px;
-    
-}
-
-#front button:hover{
-
-    border: 3px solid white;
-
+#grid-container>div:nth-child(even)
+{
+    background-color: #7fdcdb;
+    color: white;
 }
